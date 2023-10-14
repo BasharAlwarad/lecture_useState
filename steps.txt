@@ -1,1 +1,18 @@
+first section:
+creating useState with Js.
+
+
+
+second section:
 - Why can't we call hooks inside Loops or conditions?
+   or in other words, why do hooks relay on call orders?
+
+- Hooks are all about arrays
+
+-reverse-engineer hooks
+
+there is nothing that useState can do and useReducer can't and vice versa
+if you gonna wright a lot of logic use useReducer 
+
+
+third section:
