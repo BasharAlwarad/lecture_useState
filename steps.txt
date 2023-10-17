@@ -1,13 +1,18 @@
 first section:
+in math f(x) is a function with a state
 creating useState with Js.
 
 
-
 second section:
+- react update the virtual DOM not the DOM itself
+- setState is a sync operation
+- console log useState
+- hooks should be called inside the function
 - Why can't we call hooks inside Loops or conditions?
    or in other words, why do hooks relay on call orders?
 
 - Hooks are all about arrays
+- react is the one keeping the State
 
 -reverse-engineer hooks
 
