@@ -5,13 +5,14 @@ import Result from './components/Result.js';
 const App = () => {
   const [x, setX] = useState(1);
   setX(2);
+  setX(3);
   function handleClick() {
     console.log(state);
     console.log(x);
     setX(state.x + 1);
   }
   const button = Button(handleClick);
-  const result = Result(x);
+  const result = Result(state.x);
   return [button, result];
 };
 

@@ -6,13 +6,18 @@ document.body.appendChild(button);
 document.body.appendChild(p);
 
 let state = 0;
-
-function setState() {
-  state = state + 1;
+function setState(newValue) {
+  state = newValue;
 }
 
+function useState(initialValue) {
+  return [initialValue, setState(initialValue)];
+}
+
+const [x, setX] = useState(1);
+
 button.addEventListener('click', () => {
-  setState();
+  setState(state + 1);
   console.log('Counter:', state);
   p.innerHTML = state;
   render();

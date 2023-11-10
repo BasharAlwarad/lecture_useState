@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 const FormComponent = () => {
-  const [name, setName] = useState({
+  const [user, setUser] = useState({
     firstName: '',
     lastName: '',
   });
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setName((prevName) => ({
+    setUser((prevName) => ({
       ...prevName,
       [name]: value,
     }));
@@ -16,7 +16,7 @@ const FormComponent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Form submitted:', name);
+    console.log('Form submitted:', user);
   };
 
   return (
@@ -26,7 +26,7 @@ const FormComponent = () => {
         <input
           type='text'
           name='firstName'
-          value={name.firstName}
+          value={user.firstName}
           onChange={handleInputChange}
         />
       </label>
@@ -36,7 +36,7 @@ const FormComponent = () => {
         <input
           type='text'
           name='lastName'
-          value={name.lastName}
+          value={user.lastName}
           onChange={handleInputChange}
         />
       </label>

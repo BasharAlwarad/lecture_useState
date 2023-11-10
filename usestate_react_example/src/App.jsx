@@ -17,11 +17,11 @@ const App = () => {
   };
 
   if (x === false) {
-    checkIfExists('John', 'Doe', DB());
+    checkIfExists('John', 'oe', DB());
   }
-
   return (
     <>
+      <div>Hello</div>
       {x === true ? (
         <>
           <h1>Hello</h1>
